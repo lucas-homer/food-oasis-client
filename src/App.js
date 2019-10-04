@@ -1,33 +1,18 @@
 import React from "react";
-import logo from "./images/fola.svg";
-import "./App.css";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 const styles = {
-  container: {
-    display: "flex",
-    justifyContent: "center",
-  },
-  description: {
-    maxWidth: "35%",
-    fontSize: "1.2rem",
+  app: {
+    color: "black",
+    backgroundColor: "#FAEBD7",
   },
 };
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p style={{ fontSize: "2rem" }}>Food Oasis Los Angeles</p>
-
-        <section style={styles.container}>
-          <article style={styles.description}>
-            Food Oasis LALA (FOLA) shows you places to find healthy food in Los
-            Angeles - whether you are looking to buy, grow, or need access to
-            free food.
-          </article>
-        </section>
-      </header>
+    <div style={styles.app}>
+      <Header />
+      <Main />
     </div>
   );
 }
