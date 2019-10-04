@@ -5,7 +5,7 @@ export default function MenuButton({ onClick }) {
   return (
     <>
       <button className="menuButton" onClick={() => {}}>
-        <svg width="22" height="19" viewBox="0 0 22 19">
+        <svg width="35" height="35" viewBox="0 0 35 35">
           <switch>
             <g>
               <polygon

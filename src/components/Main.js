@@ -12,7 +12,6 @@ const styles = {
     justifyContent: "center",
     fontSize: "calc(10px + 2vmin)",
     textAlign: "center",
-    // color: "white",
   },
   title: {
     fontSize: "2rem",

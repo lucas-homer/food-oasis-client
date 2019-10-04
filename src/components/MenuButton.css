@@ -2,8 +2,10 @@
   color: dimgray;
   width: 3rem;
   height: 3rem;
+  padding: 1.25rem;
   background: #faebd7;
   border: 0;
+  outline: none;
 }
 .menuButton :hover {
   cursor: pointer;
