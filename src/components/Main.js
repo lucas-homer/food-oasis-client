@@ -19,9 +19,10 @@ const styles = {
   container: {
     display: "flex",
     justifyContent: "center",
+    maxWidth: "300px",
   },
   description: {
-    maxWidth: "35%",
+    width: "100%",
     fontSize: "1.2rem",
   },
 };
