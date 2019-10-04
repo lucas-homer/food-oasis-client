@@ -1,5 +1,5 @@
 import React from "react";
-import MenuButton from "./MenuButton";
+import Menu from "./Menu";
 import logo from "../images/fola.svg";
 
 const styles = {
@@ -20,7 +20,7 @@ const styles = {
 export default function Header() {
   return (
     <header style={styles.header}>
-      <MenuButton />
+      <Menu />
       <img src={logo} style={styles.logo} alt="logo" />
     </header>
   );
