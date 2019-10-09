@@ -1,6 +1,8 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Map from "./components/Map";
 
 const styles = {
   app: {
@@ -10,10 +12,19 @@ const styles = {
 };
 function App() {
   return (
-    <div style={styles.app}>
-      <Header />
-      <Main />
-    </div>
+    <Router>
+      <div style={styles.app}>
+        <Header />
+        <Switch>
+          <Route path="/map">
+            <Map />
+          </Route>
+          <Route path="/">
+            <Main />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
