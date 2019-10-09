@@ -3,9 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
 import MenuIcon from "@material-ui/icons/Menu";
+import MenuItemLink from "./MenuItemLink";
 
 const useStyles = makeStyles({
   list: {
@@ -40,6 +39,7 @@ export default function Menu() {
     >
       <List>
         {[
+          "Map",
           "Donate",
           "FAQs",
           "News",
@@ -47,11 +47,11 @@ export default function Menu() {
           "Organizations",
           "About",
           "Team",
-        ].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        ].map((text, index) => {
+          const route = text.toLowerCase();
+
+          return <MenuItemLink key={index} to={`/${route}`} text={text} />;
+        })}
       </List>
     </div>
   );
