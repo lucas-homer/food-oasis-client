@@ -9,6 +9,8 @@ const styles = {
     minHeight: "3rem",
     width: "100%",
     color: "blanchedalmond",
+    top: "0",
+    position: "sticky",
   },
   logo: {
     width: "4rem",
